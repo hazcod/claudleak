@@ -45,7 +45,7 @@ type RepoInfo struct {
 	HTMLURL  string
 }
 
-func Discover(ctx context.Context, token string, maxRepos int, verbose bool) ([]RepoInfo, error) {
+func Discover(ctx context.Context, token string, maxRepos int, org string, verbose bool) ([]RepoInfo, error) {
 	client := github.NewClient(nil).WithAuthToken(token)
 
 	seen := make(map[string]bool)
@@ -54,6 +54,10 @@ func Discover(ctx context.Context, token string, maxRepos int, verbose bool) ([]
 	for _, query := range searchQueries {
 		if len(repos) >= maxRepos {
 			break
+		}
+
+		if org != "" {
+			query = query + " user:" + org
 		}
 
 		if verbose {

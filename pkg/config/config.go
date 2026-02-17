@@ -15,6 +15,7 @@ type Config struct {
 	Output   string
 	Verbose      bool
 	VerifiedOnly bool
+	Org          string
 }
 
 func ParseConfig() (*Config, error) {
@@ -27,6 +28,8 @@ func ParseConfig() (*Config, error) {
 	flag.StringVar(&cfg.Output, "output", "", "Write results to file (default: stdout)")
 	flag.BoolVar(&cfg.Verbose, "verbose", false, "Show progress/debug info")
 	flag.BoolVar(&cfg.VerifiedOnly, "verified-only", false, "Only show verified credentials")
+	flag.StringVar(&cfg.Org, "org", "", "Only scan repos owned by this GitHub user or org")
+	flag.StringVar(&cfg.Org, "user", "", "Alias for --org")
 
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage: claudleak [flags]\n\nScans public GitHub repos with .claude/ directories for leaked credentials.\n\nFlags:\n")
