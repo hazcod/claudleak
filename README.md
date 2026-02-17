@@ -4,6 +4,20 @@ Scans public GitHub repositories for leaked credentials in AI coding tool config
 
 Uses [TruffleHog](https://github.com/trufflesecurity/trufflehog) for secret detection.
 
+Example `.claude/` directory:
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(go build:*)",
+      "Bash(RAPID7_ENCRYPTED_CREDS='**eP3g488hQ23QiU4kJahhwPKs3PyE**' go test ./pkg/agents/ -run TestRules -v -count=1 -timeout 30s)",
+      "Bash(gcloud sql instances list:*)",
+    ]
+  }
+}
+```
+
 ## Install
 
 ```bash
