@@ -33,6 +33,8 @@ GITHUB_TOKEN="ghp_..." ./claudleak
 | `--workers` | CPU count | Concurrent clone/scan workers |
 | `--json` | `false` | Output results as JSON |
 | `--output` | stdout | Write results to file |
+| `--verified-only` | `false` | Only show verified credentials |
+| `--org` / `--user` | | Only scan repos owned by this GitHub user or org |
 | `--verbose` | `false` | Show progress/debug info |
 
 ### Examples
@@ -43,6 +45,9 @@ claudleak --max-repos 50 --json --output results.json
 
 # Verbose scan with 4 workers
 claudleak --workers 4 --verbose
+
+# Scan a specific org, only verified secrets
+claudleak --org microsoft --verified-only
 ```
 
 ## How It Works
