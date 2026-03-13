@@ -6,7 +6,7 @@ require (
 	github.com/fatih/color v1.18.0
 	github.com/go-logr/logr v1.4.3
 	github.com/google/go-github/v68 v68.0.0
-	github.com/olekukonko/tablewriter v1.1.3
+	github.com/olekukonko/tablewriter v1.1.4
 	github.com/trufflesecurity/trufflehog/v3 v3.93.4
 )
 
