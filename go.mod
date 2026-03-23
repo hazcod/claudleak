@@ -3,7 +3,7 @@ module github.com/niels/claudleak
 go 1.25.0
 
 require (
-	github.com/fatih/color v1.18.0
+	github.com/fatih/color v1.19.0
 	github.com/go-logr/logr v1.4.3
 	github.com/google/go-github/v68 v68.0.0
 	github.com/olekukonko/tablewriter v1.1.3
@@ -219,7 +219,7 @@ require (
 	golang.org/x/net v0.50.0 // indirect
 	golang.org/x/oauth2 v0.35.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
-	golang.org/x/sys v0.41.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
 	golang.org/x/term v0.40.0 // indirect
 	golang.org/x/text v0.34.0 // indirect
 	golang.org/x/time v0.14.0 // indirect
