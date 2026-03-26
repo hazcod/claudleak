@@ -7,7 +7,7 @@ require (
 	github.com/go-logr/logr v1.4.3
 	github.com/google/go-github/v68 v68.0.0
 	github.com/olekukonko/tablewriter v1.1.3
-	github.com/trufflesecurity/trufflehog/v3 v3.93.4
+	github.com/trufflesecurity/trufflehog/v3 v3.94.1
 )
 
 require (
@@ -101,7 +101,6 @@ require (
 	github.com/go-git/go-billy/v5 v5.7.0 // indirect
 	github.com/go-git/go-git/v5 v5.16.5 // indirect
 	github.com/go-jose/go-jose/v4 v4.1.3 // indirect
-	github.com/go-ldap/ldap/v3 v3.4.12 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-logr/zapr v1.3.0 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible // indirect
@@ -143,6 +142,7 @@ require (
 	github.com/lestrrat-go/jwx/v3 v3.0.13 // indirect
 	github.com/lestrrat-go/option/v2 v2.0.0 // indirect
 	github.com/lib/pq v1.11.2 // indirect
+	github.com/mariduv/ldap-verify v0.0.2 // indirect
 	github.com/marusama/semaphore/v2 v2.5.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
